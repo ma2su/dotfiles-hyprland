@@ -18,8 +18,8 @@
 <p align="center">
   <img src="screenshots/image.png" alt="Hyprland desktop preview" width="90%">
   <img src="screenshots/image copy.png" alt="Other stuff" width="90%">
-  <img src="screenshots/image copy3.png" alt="Other stuff" width="90%">
-  <img src="screenshots/image copy2.png" alt="Other stuff" width="90%">
+  <img src="screenshots/image copy 3.png" alt="Other stuff" width="90%">
+  <img src="screenshots/image copy 2.png" alt="Other stuff" width="90%">
 </p>
 
 ---
