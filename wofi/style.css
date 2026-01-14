@@ -1,0 +1,28 @@
+/* On cible l'élément racine */
+#window {
+    background-color: #11111b !important;
+    border: 2px solid #ff4f69;
+    border-radius: 12px;
+}
+
+/* La boîte qui contient la liste et la barre de recherche */
+#outer-box {
+    background-color: #11111b !important;
+    margin: 10px;
+}
+
+/* On s'assure que rien ne reste transparent/gris */
+#inner-box, #scroll {
+    background-color: transparent !important;
+}
+
+#input {
+    background-color: #1e1e2e !important;
+    color: #f5e0dc;
+    border: 1px solid #ff4f69;
+    margin-bottom: 10px;
+}
+
+#entry:selected {
+    background-color: #ff4f69 !important;
+}

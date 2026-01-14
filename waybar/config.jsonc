@@ -1,0 +1,131 @@
+{
+    "layer": "top",
+    "position": "top",
+    "width": 1684,
+    "spacing": 25,
+    "padding": 1,
+    "margin-top": 2,
+    "height": 5,
+
+    "modules-left": [
+        "custom/logo",
+        "hyprland/workspaces",
+    ],
+
+    "modules-center":[
+        "custom/kitty",
+        "custom/opera",
+        "custom/vscode",
+        "custom/discord",
+        "custom/applemusic"
+
+    ],
+    "modules-right":[
+        "custom/media",
+        "pulseaudio",
+        "temperature",
+        "network",
+        "battery",
+        "clock"
+    ],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+
+    "clock": {
+        "format": "{:%H:%M}"
+    },
+
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-full": "  {capacity}%",
+        "format-icons": ["","","","",""],
+        "states": { "warning": 30, "critical": 15 }
+    },
+
+    "network": {
+        "format-wifi": "{essid} {signalStrength}% ",
+        "format-ethernet": "{ipaddr} ",
+        "format-disconnected": "⚠",
+        "on-click": "kitty -e nmtui",
+        "tooltip-format-wifi": "{ipaddr}",
+        "tooltip-format-ethernet": "{ipaddr}"
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon} {source_volume}%",
+        "format-muted": "",
+        "on-click": "pamixer -t",
+        "on-click-right": "pavucontrol",
+        "format-icons": {
+            "default": ["", "", ""]
+        }
+    },
+
+    "temperature": {
+        "format": "{temperatureC}°C "
+    },
+
+    "custom/kitty": {
+        "exec": "echo ''",
+        "on-click": "kitty",
+        "interval": 0
+    },
+
+    "custom/opera": {
+        "exec": "echo '󰖟'",
+        "on-click": "brave",
+        "interval": 0
+    },
+
+    "custom/applemusic":{
+
+        "exec":"echo '󰎈'",
+        "on-click":"chromium --app=https://music.apple.com/fr/home",
+        "interval":0
+
+    },
+
+    "custom/vscode": {
+        "exec": "echo ''",
+        "on-click": "code",
+        "interval": 0
+    },
+
+    "custom/discord": {
+        "exec": "echo ''",
+        "on-click": "discord",
+        "interval": 0
+    },
+
+    "custom/logo":{
+        "exec": "echo ''",
+        "on-click": "scripts/home.sh",
+        "interval":0
+    },
+    
+    "custom/media": {
+        "exec": "scripts/media.sh",
+        "format": "{}", 
+        "interval": 2,
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+
+    }
+}

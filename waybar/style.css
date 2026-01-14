@@ -1,0 +1,66 @@
+/* Palette Cherry Crush */
+@define-color cherry1 #D7263D;
+@define-color cherry2 #B61833;
+@define-color cherry3 #9E2431;
+@define-color cherry4 #6B0F1A;
+@define-color cherry5 #4A0D16;
+
+* {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", "Nerd Font", "FiraCode Nerd Font", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+window#waybar {
+    background: transparent;
+    border-radius: 15px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: @cherry1;
+    border-radius:  8px;
+}
+
+#workspaces button.active {
+    background: @cherry3;
+    box-shadow: 0 0 10px #D7263D;
+}
+
+#workspaces button:hover {
+    background: @cherry3;
+    box-shadow: 0 0 10px #D7263D;
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#temperature,
+#custom-media {
+    padding: 0px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+
+#custom-opera,
+#custom-discord,
+#custom-vscode,
+#custom-kitty,
+#custom-media {
+    font-size: medium;
+}
+
+#custom-opera:hover,
+#custom-discord:hover,
+#custom-vscode:hover,
+#custom-kitty:hover
+#custom-applemusic:hover {
+    color: @cherry1;
+}
+
+#clock {
+    font-size: 17px;
+}
+

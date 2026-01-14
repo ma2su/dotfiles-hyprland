@@ -1,0 +1,145 @@
+/* ======== PALETTE CHERRY CRUSH ======== */
+/* Rouge clair -> Rouge vif -> Rouge cerise -> Bordeaux -> Rouge noir */
+:root {
+    --cherry-1: #d8243f;
+    --cherry-2: #b2173a;
+    --cherry-3: #90303a;
+    --cherry-4: #68141f;
+    --cherry-5: #3e0910;
+
+    --text-light: #ffe6e9;
+    --text-soft: #ffccd1;
+
+    --blur: 18px;
+}
+
+/* ======== BASE ======== */
+
+* {
+    font-family: "Inter", "FreeSans", sans-serif;
+    color: var(--text-light);
+    font-weight: 450;
+    transition: all 0.25s ease;
+}
+
+/* ======== PANEL (Control Center) ======== */
+
+#control-center {
+    background: #3e0910;
+
+    backdrop-filter: blur(var(--blur));
+
+    border: 2px solid rgba(216, 36, 63, 0.45);
+    border-radius: 22px;
+    padding: 18px;
+    margin: 10px;
+
+    box-shadow:
+        0 0 25px rgba(216, 36, 63, 0.25),
+        0 0 60px rgba(0, 0, 0, 0.55);
+
+    animation: slideDown 0.35s cubic-bezier(.25,.8,.25,1);
+}
+
+/* Animation ouverture */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ======== TITRES & WIDGETS ======== */
+
+.widget-title, .widget-dnd, .widget-inhibitors {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: var(--text-soft);
+
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ======== NOTIFICATIONS ======== */
+
+.notification {
+    background: linear-gradient(
+        140deg,
+        rgba(178, 23, 58, 0.28),
+        rgba(144, 48, 58, 0.28),
+        rgba(62, 9, 16, 0.32)
+    );
+
+    border-left: 4px solid rgba(216, 36, 63, 0.8);
+    border-radius: 16px;
+
+    padding: 12px 14px;
+    margin: 10px 0;
+
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.55);
+
+    animation: fadeIn 0.35s ease-out;
+}
+
+/* Animation apparition notifs */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ======== TEXT ======== */
+
+.notification .title {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.notification .body {
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+/* ======== ICONES ======== */
+
+.icon, .app-icon {
+    color: var(--cherry-1);
+    opacity: 0.9;
+}
+
+.notification:hover .icon,
+.notification:hover .app-icon {
+    opacity: 1;
+}
+
+/* ======== SWITCHES, BUTTONS ======== */
+
+button, switch {
+    background: rgba(178, 23, 58, 0.25);
+    border-radius: 10px;
+    padding: 6px 10px;
+    transition: background 0.2s ease;
+}
+
+button:hover, switch:hover {
+    background: rgba(216, 36, 63, 0.4);
+}
+
+/* ======== SCROLLBAR ======== */
+
+scrollbar slider {
+    background: rgba(216, 36, 63, 0.45);
+    border-radius: 10px;
+}

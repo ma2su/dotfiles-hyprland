@@ -1,0 +1,6 @@
+width=500
+height=400
+location=center
+show=drun
+allow_images=true
+style=wofi/style.css
