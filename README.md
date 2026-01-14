@@ -55,3 +55,42 @@ swaync/     → Notification daemon config
 scripts/    → Custom shell scripts
 wallpapers/ → Wallpapers
 screenshots/→ Desktop previews
+```
+<h2 id="installation">🚀 Installation</h2>
+
+<div align="left">
+  <table style="border: 2px solid #ff4d4d; border-radius: 10px; background-color: #1a1a1a; width: 100%;">
+    <tr>
+      <td style="padding: 15px;">
+        <strong style="color: #ff4d4d;">⚠️ [!CAUTION]</strong><br>
+        <i>These dotfiles are personal and may require adjustments depending on your setup.</i>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<ol>
+  <li>
+    <strong>Clone the repository:</strong>
+    <pre><code>git clone https://github.com/ma2su/dotfiles-hyprland.git
+cd dotfiles-hyprland</code></pre>
+  </li>
+
+  <li>
+    <strong>Copy the configurations:</strong>
+    <p>Copy the desired configurations manually to your <code>~/.config/</code> directory:</p>
+    <pre><code>cp -r hypr waybar kitty wofi swaync ~/.config/</code></pre>
+  </li>
+
+  <li>
+    <strong>Execution permissions:</strong>
+    <p>Don't forget to make your scripts executable:</p>
+    <pre><code>chmod +x ~/.config/hypr/scripts/*</code></pre>
+  </li>
+</ol>
+
+<hr>
+
+<p align="center">Built with ❤️ by <strong>ma2su</strong></p>
